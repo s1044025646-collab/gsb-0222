@@ -1,0 +1,23 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "本地闪卡复习间隔与到期队列后端（TypeScript + Node.js + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --disable-warning=ExperimentalWarning dist/src/main.js",
+    "cli": "node --disable-warning=ExperimentalWarning dist/src/cli.js",
+    "demo": "node --disable-warning=ExperimentalWarning dist/src/demo.js",
+    "test": "npm run build && node --disable-warning=ExperimentalWarning --test \"dist/test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
