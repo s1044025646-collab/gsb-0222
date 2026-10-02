@@ -1,0 +1,20 @@
+{
+  "name": "flashcards-srs",
+  "version": "1.0.0",
+  "description": "本地闪卡间隔复习后端（API + CLI，TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "bin": {
+    "flashcards": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "test": "tsc && node --test --test-reporter=spec \"dist/**/*.test.js\"",
+    "demo": "tsc && node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
